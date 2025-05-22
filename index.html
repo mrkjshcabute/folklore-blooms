@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FOLKLORE BLOOMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="#shop">SHOP</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="header-middle">
+            <ul>
+                <li>
+                    <a href="#home">FOLKLORE BLOOMS</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="header-right">
+            <ul>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+
+                <li>
+                    <a href="#events">EVENTS</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#events">EVENTS</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div section id="home" class="top-pic">
+        <img src="img/top.jpg" alt="">
+    </div>
+
+    <div section id="shop" class="categories">
+        <div class="category">
+            <img src="img/1.jpg" alt="">
+            <p>DELIVERY &#8594</p>
+        </div>
+
+        <div class="category">
+            <img src="img/2.jpg" alt="">
+            <p>WEDDING &#8594</p>
+        </div>
+
+        <div class="category">
+            <img src="img/3.jpg" alt="">
+            <p>GALLERY &#8594</p>
+        </div>
+
+        <div class="category">
+            <img src="img/1.jpg" alt="">
+            <p>DELIVERY &#8594</p>
+        </div>
+
+        <div class="category">
+            <img src="img/2.jpg" alt="">
+            <p>WEDDING &#8594</p>
+        </div>
+
+        <div class="category">
+            <img src="img/3.jpg" alt="">
+            <p>GALLERY &#8594</p>
+        </div>
+    </div>
+
+    <div class="body-pic">
+        <img src="img/body.jpg" alt="">
+    </div>
+
+    <div section id="about" class="about">
+        <div class="about-txt">
+            <p class="about-title">READ OUR STORY</p>
+            <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem eos fuga dolorum quas sunt! Dolorum deserunt, similique voluptates quod possimus esse reprehenderit ut quae quisquam unde perferendis ad nobis?</p>
+            <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem eos fuga dolorum quas sunt! Dolorum deserunt, similique voluptates quod possimus esse reprehenderit ut quae quisquam unde perferendis ad nobis?</p>
+
+            <button>LEARN MORE</button>
+        </div>
+
+        <div class="about-pic">
+            <div class="right-pics">
+                <img class="under-pic" src="img/5.jpg" alt="">
+                <div class="over-pic">
+                    <img src="img/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div section id="events" class="bottom">
+        <div class="bottom-pics">
+            <img src="img/7.jpg" alt="">
+            <img src="img/8.jpg" alt="">
+            <img src="img/9.jpg" alt="">
+        </div>
+
+        <div class="bottom-form">
+            <div class="bottom-txt">
+                <p class="bottom-title">KEEP IN TOUCH</p>
+                <p class="bottom-content">Sign up to our newsletter for monthly updates.</p>
+            </div>
+
+            <div class="bottom-sign">
+                <div class="bottom-name">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+                <div class="bottom-email">
+                    <input type="email" placeholder="Email">
+                    <div class="proceed">
+                        &#8594
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer section id="contact">
+        <div class="footer-upper">
+            <div class="footer-left">
+                <a href="">ABOUT</a>
+                <a href="">CONTACT US</a>
+                <a href="">THE BLOG</a>
+            </div>
+    
+            <div class="footer-middle">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+    
+            <div class="footer-right">
+                <a href="">PRIVACY POLICY</a>
+                <a href="">TERMS &amp; CONDITION</a>
+                <a href="">WEBSITE</a>
+            </div>
+        </div>
+
+        <div class="footer-lower">
+            <p>2023 &#124; ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>    
+    
+    <script>
+    const menuIcon = document.querySelector('.menu');
+    const sidebar = document.getElementById('mobileSidebar');
+
+    menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    });
+
+    // Optional: Close sidebar when link is clicked
+    document.querySelectorAll('#mobileSidebar a').forEach(link => {
+        link.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    });
+</script>
+
+
+</body>
+</html>
