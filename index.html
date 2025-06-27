@@ -20,11 +20,11 @@
         <nav class="header-left">
             <ul>
                 <li>
-                    <a href="#about">ABOUT</a>
+                    <a href="#shop">SHOP</a>
                 </li>
 
-                <li>
-                    <a href="#shop">SHOP</a>
+                 <li>
+                    <a href="#about">ABOUT</a>
                 </li>
             </ul>
         </nav>
@@ -40,11 +40,11 @@
         <nav class="header-right">
             <ul>
                 <li>
-                    <a href="#contact">CONTACT</a>
+                    <a href="#events">EVENTS</a>
                 </li>
 
                 <li>
-                    <a href="#events">EVENTS</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </nav>
@@ -54,12 +54,16 @@
         </div>
 
         <div class="mobile-sidebar" id="mobileSidebar">
+            <div class="mob-logo">
+                <img src="img/logo.png" alt="" class="mobile-logo">
+            </div>
+            
             <ul>
                 <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#shop">SHOP</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#events">EVENTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
 
@@ -192,9 +196,15 @@
             sidebar.classList.toggle('active');
         });
 
-        document.querySelectorAll('#mobileSidebar a').forEach(link => {
-            link.addEventListener('click', () => {
+        document.querySelectorAll('#mobileSidebar li').forEach(li => {
+            li.addEventListener('click', () => {
                 sidebar.classList.remove('active');
+
+                document.querySelectorAll('#mobileSidebar li').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                li.classList.add('active');
             });
         });
 

@@ -369,6 +369,19 @@ footer a:hover, footer i:hover{
     padding-top: 80px; /* avoid header */
 }
 
+.mob-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.mobile-logo{
+    height: 140px;
+    width: 140px;
+}
+
 .mobile-sidebar ul {
     list-style: none;
     padding: 0;
@@ -376,14 +389,36 @@ footer a:hover, footer i:hover{
 }
 
 .mobile-sidebar ul li {
-    margin: 20px;
     text-align: center;
+    margin: 0;
+    margin-top: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.mobile-sidebar ul li:hover {
+    background-color: #132a13;
 }
 
 .mobile-sidebar ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
+    display: block;
+}
+
+.mobile-sidebar ul li a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.mobile-sidebar ul li.active {
+    background-color: #132a13;
+}
+
+.mobile-sidebar ul li.active a {
+    color: white;
 }
 
 /* Sidebar active */
