@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -67,17 +70,17 @@
     </div>
 
     <div section id="shop" class="categories">
-        <div class="category">
+        <div class="category" data-aos="fade-up"        data-aos-anchor-placement="bottom-bottom" data-aos-duration="300">
             <img src="img/1.jpg" alt="">
             <p>DELIVERY &#8594</p>
         </div>
 
-        <div class="category">
+        <div class="category" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
             <img src="img/2.jpg" alt="">
             <p>WEDDING &#8594</p>
         </div>
 
-        <div class="category">
+        <div class="category" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
             <img src="img/3.jpg" alt="">
             <p>GALLERY &#8594</p>
         </div>
@@ -89,17 +92,29 @@
 
     <div section id="about" class="about">
         <div class="about-txt">
-            <p class="about-title">READ OUR STORY</p>
-            <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem eos fuga dolorum quas sunt! Dolorum deserunt, similique voluptates quod possimus esse reprehenderit ut quae quisquam unde perferendis ad nobis?</p>
-            <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem eos fuga dolorum quas sunt! Dolorum deserunt, similique voluptates quod possimus esse reprehenderit ut quae quisquam unde perferendis ad nobis?</p>
+            <p class="about-title" data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">READ OUR STORY</p>
+            <p class="about-content" data-aos="fade-right"
+     data-aos-offset="150"
+     data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem eos fuga dolorum quas sunt! Dolorum deserunt, similique voluptates quod possimus esse reprehenderit ut quae quisquam unde perferendis ad nobis?</p>
+            <p class="about-content" data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem eos fuga dolorum quas sunt! Dolorum deserunt, similique voluptates quod possimus esse reprehenderit ut quae quisquam unde perferendis ad nobis?</p>
 
-            <button>LEARN MORE</button>
+            <button data-aos="fade-right"
+     data-aos-offset="250"
+     data-aos-easing="ease-in-sine">LEARN MORE</button>
         </div>
 
         <div class="about-pic">
             <div class="right-pics">
-                <img class="under-pic" src="img/5.jpg" alt="">
-                <div class="over-pic">
+                <img class="under-pic" src="img/5.jpg" alt="" data-aos="fade-left"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
+                <div class="over-pic" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                     <img src="img/6.jpg" alt="">
                 </div>
             </div>
@@ -108,12 +123,20 @@
 
     <div section id="events" class="bottom">
         <div class="bottom-pics">
-            <img src="img/7.jpg" alt="">
-            <img src="img/8.jpg" alt="">
-            <img src="img/9.jpg" alt="">
+            <img src="img/7.jpg" alt="" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+            <img src="img/8.jpg" alt="" data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
+            <img src="img/9.jpg" alt="" data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">
         </div>
 
-        <div class="bottom-form">
+        <div class="bottom-form" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
             <div class="bottom-txt">
                 <p class="bottom-title">KEEP IN TOUCH</p>
                 <p class="bottom-content">Sign up to our newsletter for monthly updates.</p>
@@ -162,19 +185,21 @@
     </footer>    
     
     <script>
-    const menuIcon = document.querySelector('.menu');
-    const sidebar = document.getElementById('mobileSidebar');
+        const menuIcon = document.querySelector('.menu');
+        const sidebar = document.getElementById('mobileSidebar');
 
-    menuIcon.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-    });
-
-    document.querySelectorAll('#mobileSidebar a').forEach(link => {
-        link.addEventListener('click', () => {
-            sidebar.classList.remove('active');
+        menuIcon.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
         });
-    });
-</script>
+
+        document.querySelectorAll('#mobileSidebar a').forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+            });
+        });
+
+        AOS.init();
+    </script>
 
 </body>
 </html>
