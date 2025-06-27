@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
     <title>FOLKLORE BLOOMS</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,21 +67,6 @@
     </div>
 
     <div section id="shop" class="categories">
-        <div class="category">
-            <img src="img/1.jpg" alt="">
-            <p>DELIVERY &#8594</p>
-        </div>
-
-        <div class="category">
-            <img src="img/2.jpg" alt="">
-            <p>WEDDING &#8594</p>
-        </div>
-
-        <div class="category">
-            <img src="img/3.jpg" alt="">
-            <p>GALLERY &#8594</p>
-        </div>
-
         <div class="category">
             <img src="img/1.jpg" alt="">
             <p>DELIVERY &#8594</p>
@@ -183,14 +169,12 @@
         sidebar.classList.toggle('active');
     });
 
-    // Optional: Close sidebar when link is clicked
     document.querySelectorAll('#mobileSidebar a').forEach(link => {
         link.addEventListener('click', () => {
             sidebar.classList.remove('active');
         });
     });
 </script>
-
 
 </body>
 </html>
