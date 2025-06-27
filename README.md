@@ -7,8 +7,7 @@
 - Clean and semantic HTML structure
 - Custom CSS styling with a soft, folklore-inspired theme
 - Responsive layout across devices
-- Interactive hover effects and smooth transitions
-- Mobile-first design approach
+- Smooth transitions
 
 ## 📁 Technologies Used
 
