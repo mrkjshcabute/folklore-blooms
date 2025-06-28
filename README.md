@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/logo.png" alt="Folklore Blooms Logo" width="600">
+  <img src="img/logo.png" alt="Folklore Blooms Logo" width="200">
 </div>
 
 # 🌸 Folklore Blooms
